@@ -9,6 +9,8 @@ int Backpack::firstAvailableSpace() {
     return -1;
 }
 void Backpack::addItem(Item item) {
+    if (hasItem(item.getName())) cout << "You already have this item!" << endl;
+    else {
     int insertIndex = firstAvailableSpace();
 
     if (insertIndex == -1) {
@@ -17,6 +19,14 @@ void Backpack::addItem(Item item) {
     backpack[insertIndex] = item;
     std::cout << "Item obtained: " << item.getName() << " | " << item.getRarity() << std::endl;
     }
+    }
+}
+int Backpack::returnItemCount() {
+    int itemCount = 0;
+    for (int i = 0; i < backpack.size(); i++) {
+        if (backpack[i].getName() != "N/A") itemCount++;
+    }
+    return itemCount;
 }
 bool Backpack::hasItem(std::string item) {
     for (int i = 0; i < backpack.size(); i++) {
@@ -33,7 +43,7 @@ void Backpack::removeItem(Item item) {
     }
 }
 void Backpack::toString() {
-    std::cout << "Backpack" << std::endl;
+    std::cout << "Backpack: " << returnItemCount() <<  "/" << backpack.size() << std::endl;
     if (backpack.size() == 0) std::cout << "No items" << std::endl;
     for (Item i : backpack) {
         i.toString();

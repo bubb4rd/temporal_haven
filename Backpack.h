@@ -6,6 +6,7 @@ class Backpack {
         Backpack();
         int firstAvailableSpace();
         void addItem(Item item);
+        int returnItemCount();
         bool hasItem(std::string item);
         void removeItem(Item item);
         void toString();
