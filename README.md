@@ -24,29 +24,12 @@ There are three classes of each type of item (Common, Rare, Epic). Items can be 
 
 🚨 *This game must be compiled with CLANG!*
 
-## Mac
-
-Open terminal and cd to directory `temporal_haven` is located in.
+### Setup
 
 ```
-temporal_haven % clang++ --std=c++11  adventure.cpp Player.cpp Item.cpp Backpack.cpp Location.cpp Locations.cpp Npc.cpp -o adventure
+$ make 
+$ ./adventure
 ```
-
-*(Or compile with C++ versions above 11)*
-
-Followed by: `./adventure`. To compile the program.
-
-## Windows
-
-Open terminal and cd to directory `temporal_haven` is located in.
-
-```
-temporal_haven % clang++ --std=c++11  adventure.cpp Player.cpp Item.cpp Backpack.cpp Location.cpp Locations.cpp Npc.cpp -o adventure
-```
-
-*(Or compile with C++ versions above 11)*
-
-Followed by: `adventure.exe`. To compile the program.
 
 ### Thank you
 
