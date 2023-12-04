@@ -24,7 +24,11 @@ There are three classes of each type of item (Common, Rare, Epic). Items can be 
 
 🚨 *This game must be compiled with CLANG!*
 
-### Setup
+### Prerequisite
+
+This game requires **[make](https://gnuwin32.sourceforge.net/packages/make.htm)**. 
+
+## Compiling
 
 ```
 $ make 
@@ -33,4 +37,4 @@ $ ./adventure
 
 ### Thank you
 
-If you made it this far and actually played the game, thank you! It gave me a lot of frustration while creating it so I hope you got some enjoyment out of it. For queries email `bohubbard8@gmail.com`. Thank you once again 👍😁👍
+If you made it this far and actually played the game, thank you! It gave me a lot of frustration while creating it so I hope you got some enjoyment out of it. For questions, email `bohubbard8@gmail.com`. Thank you once again 👍😁👍
